@@ -21,3 +21,7 @@ npx http-server .
 Para publicarla basta con subir la carpeta a cualquier hosting estático (GitHub Pages, Netlify, Vercel…).
 
 El número de WhatsApp está en los enlaces `wa.me/34605862660` de `index.html` y en la constante `WHATSAPP` de `js/main.js`.
+
+## Juego
+
+En `supervivencia/` hay un juego de supervivencia 3D para PC (ver su README).

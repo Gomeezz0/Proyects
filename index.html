@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VÉRTICE — Páginas web 3D interactivas</title>
+  <meta name="description" content="Diseñamos y desarrollamos páginas web 3D interactivas y complejas: experiencias inmersivas, configuradores de producto y landings animadas. Escríbenos por WhatsApp al 605 86 26 60.">
+  <meta name="theme-color" content="#07060d">
+  <meta property="og:title" content="VÉRTICE — Páginas web 3D interactivas">
+  <meta property="og:description" content="Webs 3D que se mueven, reaccionan y venden. Pide tu presupuesto por WhatsApp.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%237c5cff'/%3E%3Cstop offset='1' stop-color='%2300e5ff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M32 58 6 10h52z' fill='url(%23g)'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <canvas id="scene" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <a class="logo" href="#inicio" aria-label="Vértice, inicio">
+      <svg viewBox="0 0 64 64" width="26" height="26" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7c5cff"/><stop offset="1" stop-color="#00e5ff"/></linearGradient></defs><path d="M32 58 6 10h52z" fill="url(#lg)"/></svg>
+      <span>VÉRTICE</span>
+    </a>
+    <nav class="nav-links" id="navLinks" aria-label="Principal">
+      <a href="#servicios">Servicios</a>
+      <a href="#laboratorio">Laboratorio</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#planes">Planes</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a class="btn btn-wa btn-sm nav-cta" target="_blank" rel="noopener"
+       href="https://wa.me/34605862660?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20una%20web%203D%20interactiva.">
+      <svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#wa"/></svg>
+      <span>WhatsApp</span>
+    </a>
+    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="inicio" data-scene="hero">
+      <div class="hero-copy">
+        <p class="eyebrow reveal">Estudio de webs 3D interactivas</p>
+        <h1 class="reveal">Tu marca,<br>en <span class="grad">tres dimensiones</span>.</h1>
+        <p class="lead reveal">Creamos páginas web 3D interactivas y complejas que se mueven, reaccionan y convierten visitas en clientes. Lo que ves detrás de este texto es solo el principio.</p>
+        <div class="cta-row reveal">
+          <a class="btn btn-wa" target="_blank" rel="noopener"
+             href="https://wa.me/34605862660?text=Hola%2C%20quiero%20una%20p%C3%A1gina%20web%203D%20interactiva.%20%C2%BFMe%20cont%C3%A1is%20c%C3%B3mo%20funciona%3F">
+            <svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#wa"/></svg>
+            Hablar por WhatsApp
+          </a>
+          <a class="btn btn-ghost" href="#laboratorio">Probar el 3D en vivo</a>
+        </div>
+        <p class="hint reveal"><span class="dot"></span> Mueve el cursor · haz clic · desplázate</p>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="section" id="servicios" data-scene="servicios">
+      <div class="section-head reveal">
+        <p class="eyebrow">Qué hacemos</p>
+        <h2>Webs que no se parecen a ninguna otra</h2>
+        <p>Diseño, 3D y código a medida. Sin plantillas.</p>
+      </div>
+      <div class="grid cards">
+        <article class="card tilt reveal">
+          <div class="card-ico">◈</div>
+          <h3>Webs 3D inmersivas</h3>
+          <p>Escenas en tiempo real con WebGL que responden al scroll, al cursor y al tacto. Tu historia contada como una experiencia.</p>
+        </article>
+        <article class="card tilt reveal">
+          <div class="card-ico">⬡</div>
+          <h3>Configuradores de producto</h3>
+          <p>Tus clientes giran, personalizan y exploran el producto en 3D antes de comprarlo: colores, materiales y piezas en directo.</p>
+        </article>
+        <article class="card tilt reveal">
+          <div class="card-ico">✦</div>
+          <h3>Landings animadas</h3>
+          <p>Páginas de lanzamiento con animaciones cinematográficas pensadas para captar atención y generar contactos.</p>
+        </article>
+        <article class="card tilt reveal">
+          <div class="card-ico">◎</div>
+          <h3>Showrooms y portfolios</h3>
+          <p>Espacios virtuales navegables para enseñar proyectos, inmuebles, colecciones o catálogos de otra manera.</p>
+        </article>
+        <article class="card tilt reveal">
+          <div class="card-ico">△</div>
+          <h3>Experiencias de marca</h3>
+          <p>Minijuegos, campañas interactivas y microsites que la gente quiere compartir.</p>
+        </article>
+        <article class="card tilt reveal">
+          <div class="card-ico">⚡</div>
+          <h3>Rendimiento real</h3>
+          <p>3D optimizado para móvil y escritorio, carga rápida, SEO cuidado y alternativa accesible cuando el dispositivo no puede con el 3D.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- LABORATORIO -->
+    <section class="section lab" id="laboratorio" data-scene="lab">
+      <div class="lab-panel reveal">
+        <p class="eyebrow">Laboratorio</p>
+        <h2>Tócalo. Es 3D de verdad.</h2>
+        <p>Nada de vídeos: esta pieza se genera en tu navegador ahora mismo. Cámbiala a tu gusto e imagina lo mismo con tu producto o tu logo.</p>
+
+        <div class="control">
+          <span class="control-label" id="lblForma">Forma</span>
+          <div class="seg" role="group" aria-labelledby="lblForma" id="shapeBtns">
+            <button type="button" data-shape="blob" class="active" aria-pressed="true">Orgánica</button>
+            <button type="button" data-shape="knot" aria-pressed="false">Nudo</button>
+            <button type="button" data-shape="crystal" aria-pressed="false">Cristal</button>
+          </div>
+        </div>
+
+        <div class="control">
+          <span class="control-label" id="lblColor">Color</span>
+          <div class="swatches" role="group" aria-labelledby="lblColor" id="paletteBtns">
+            <button type="button" data-palette="0" class="active" aria-pressed="true" aria-label="Violeta y cian" style="--a:#7c5cff;--b:#00e5ff"></button>
+            <button type="button" data-palette="1" aria-pressed="false" aria-label="Magenta y naranja" style="--a:#ff2d87;--b:#ffb020"></button>
+            <button type="button" data-palette="2" aria-pressed="false" aria-label="Verde y lima" style="--a:#00d68f;--b:#d4ff3a"></button>
+            <button type="button" data-palette="3" aria-pressed="false" aria-label="Azul y blanco" style="--a:#2f6bff;--b:#e8f0ff"></button>
+          </div>
+        </div>
+
+        <div class="control">
+          <label class="control-label" for="energy">Energía</label>
+          <input type="range" id="energy" min="0" max="100" value="45">
+        </div>
+
+        <a class="btn btn-wa" target="_blank" rel="noopener"
+           href="https://wa.me/34605862660?text=Hola%2C%20he%20probado%20el%20laboratorio%203D%20y%20quiero%20algo%20as%C3%AD%20para%20mi%20marca.">
+          <svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#wa"/></svg>
+          Quiero algo así
+        </a>
+      </div>
+    </section>
+
+    <!-- PROCESO -->
+    <section class="section" id="proceso" data-scene="proceso">
+      <div class="section-head reveal">
+        <p class="eyebrow">Cómo trabajamos</p>
+        <h2>De la idea a la web, en cuatro pasos</h2>
+      </div>
+      <ol class="steps">
+        <li class="step reveal"><span class="step-n">01</span><h3>Nos escribes</h3><p>Cuéntanos tu idea por WhatsApp. Te respondemos con preguntas claras y una primera orientación.</p></li>
+        <li class="step reveal"><span class="step-n">02</span><h3>Concepto y diseño</h3><p>Definimos la experiencia, el estilo visual y un prototipo navegable para que lo veas antes de construirlo.</p></li>
+        <li class="step reveal"><span class="step-n">03</span><h3>Desarrollo 3D</h3><p>Modelado, animación y programación. Vas viendo avances en un enlace privado y ajustamos contigo.</p></li>
+        <li class="step reveal"><span class="step-n">04</span><h3>Lanzamiento</h3><p>Optimizamos, publicamos en tu dominio y te acompañamos después para que todo siga funcionando.</p></li>
+      </ol>
+    </section>
+
+    <!-- PLANES -->
+    <section class="section" id="planes" data-scene="planes">
+      <div class="section-head reveal">
+        <p class="eyebrow">Planes</p>
+        <h2>Elige por dónde empezar</h2>
+        <p>Cada proyecto es distinto: te pasamos un presupuesto cerrado y sin compromiso.</p>
+      </div>
+      <div class="grid plans">
+        <article class="plan tilt reveal">
+          <h3>Landing 3D</h3>
+          <p class="plan-sub">Una página que impacta</p>
+          <ul>
+            <li>Una escena 3D interactiva</li>
+            <li>Animaciones ligadas al scroll</li>
+            <li>Diseño adaptado a móvil</li>
+            <li>Botón de contacto y WhatsApp</li>
+          </ul>
+          <a class="btn btn-ghost" target="_blank" rel="noopener"
+             href="https://wa.me/34605862660?text=Hola%2C%20me%20interesa%20el%20plan%20Landing%203D.%20%C2%BFMe%20pas%C3%A1is%20presupuesto%3F">Pedir presupuesto</a>
+        </article>
+        <article class="plan plan-hot tilt reveal">
+          <span class="badge">Recomendado</span>
+          <h3>Web 3D completa</h3>
+          <p class="plan-sub">Tu sitio entero, en otra liga</p>
+          <ul>
+            <li>Varias secciones y escenas 3D</li>
+            <li>Modelos y materiales a medida</li>
+            <li>Transiciones entre páginas</li>
+            <li>SEO y rendimiento optimizados</li>
+            <li>Panel para editar contenidos</li>
+          </ul>
+          <a class="btn btn-wa" target="_blank" rel="noopener"
+             href="https://wa.me/34605862660?text=Hola%2C%20me%20interesa%20el%20plan%20Web%203D%20completa.%20%C2%BFMe%20pas%C3%A1is%20presupuesto%3F">
+            <svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#wa"/></svg>
+            Pedir presupuesto
+          </a>
+        </article>
+        <article class="plan tilt reveal">
+          <h3>Experiencia a medida</h3>
+          <p class="plan-sub">Sin límites</p>
+          <ul>
+            <li>Configuradores de producto</li>
+            <li>Showrooms y recorridos virtuales</li>
+            <li>Juegos y campañas interactivas</li>
+            <li>Integración con tienda o CRM</li>
+          </ul>
+          <a class="btn btn-ghost" target="_blank" rel="noopener"
+             href="https://wa.me/34605862660?text=Hola%2C%20quiero%20una%20experiencia%203D%20a%20medida.%20Os%20cuento%20mi%20idea%3A">Contar mi idea</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="section contact" id="contacto" data-scene="contacto">
+      <div class="contact-box reveal">
+        <div class="contact-copy">
+          <p class="eyebrow">Contacto</p>
+          <h2>¿Hablamos de tu web 3D?</h2>
+          <p>Escríbenos directamente por WhatsApp. Rellena lo que quieras y se abrirá el chat con tu mensaje ya preparado.</p>
+          <a class="phone" target="_blank" rel="noopener" href="https://wa.me/34605862660">
+            <svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#wa"/></svg>
+            605 86 26 60
+          </a>
+        </div>
+        <form class="form" id="waForm" novalidate>
+          <label>Tu nombre
+            <input type="text" name="nombre" autocomplete="name" placeholder="Cómo te llamas">
+          </label>
+          <label>Qué necesitas
+            <select name="tipo">
+              <option>Landing 3D</option>
+              <option>Web 3D completa</option>
+              <option>Configurador de producto</option>
+              <option>Experiencia a medida</option>
+              <option>Aún no lo sé</option>
+            </select>
+          </label>
+          <label>Cuéntanos tu idea
+            <textarea name="idea" rows="4" placeholder="Qué vendes, qué te imaginas, para cuándo lo necesitas…"></textarea>
+          </label>
+          <button class="btn btn-wa" type="submit">
+            <svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#wa"/></svg>
+            Enviar por WhatsApp
+          </button>
+          <p class="form-note">No guardamos nada: el mensaje se envía desde tu propio WhatsApp.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year">2026</span> VÉRTICE · Webs 3D interactivas</span>
+    <a target="_blank" rel="noopener" href="https://wa.me/34605862660">WhatsApp 605 86 26 60</a>
+  </footer>
+
+  <a class="fab" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp al 605 86 26 60"
+     href="https://wa.me/34605862660?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20una%20web%203D%20interactiva.">
+    <svg class="wa-ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#wa"/></svg>
+  </a>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="wa" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 1.67c2.2 0 4.27.86 5.82 2.42a8.2 8.2 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24zM8.53 7.33c-.16 0-.43.06-.66.31-.22.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.46-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.23-.16-.48-.29-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.78.97-.15.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.13-.56-1.35-.77-1.85-.2-.48-.4-.42-.56-.43h-.48z"/>
+    </symbol>
+  </svg>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

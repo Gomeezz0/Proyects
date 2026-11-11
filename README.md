@@ -1,0 +1,20 @@
+# VÉRTICE — Web 3D interactiva
+
+Página de marca para vender páginas web 3D interactivas, con contacto directo por WhatsApp (605 86 26 60).
+
+- `index.html` — contenido y secciones
+- `css/styles.css` — estilos
+- `js/main.js` — escena 3D (Three.js) e interacciones
+- `vendor/` — Three.js incluido en local (sin dependencias externas ni build)
+
+## Verla en local
+
+Es un sitio estático, pero usa módulos JS, así que necesita un servidor:
+
+```bash
+npx http-server .
+```
+
+Para publicarla basta con subir la carpeta a cualquier hosting estático (GitHub Pages, Netlify, Vercel…).
+
+El número de WhatsApp está en los enlaces `wa.me/34605862660` de `index.html` y en la constante `WHATSAPP` de `js/main.js`.

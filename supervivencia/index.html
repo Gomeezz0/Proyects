@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Último Fuego — Supervivencia 3D</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="modulepreload" href="../vendor/three.module.min.js">
+</head>
+<body>
+  <canvas id="c"></canvas>
+
+  <div id="hud" class="hidden">
+    <div id="cross"></div>
+    <div id="top">
+      <div id="clock"></div>
+      <div id="objective"></div>
+    </div>
+    <div id="prompt"></div>
+    <div id="log"></div>
+    <div id="stats">
+      <div class="bar"><span>Vida</span><i id="b-hp" style="background:#d9463e"></i></div>
+      <div class="bar"><span>Energía</span><i id="b-st" style="background:#e3c14a"></i></div>
+      <div class="bar"><span>Hambre</span><i id="b-hu" style="background:#c9803a"></i></div>
+      <div class="bar"><span>Sed</span><i id="b-th" style="background:#4aa3d9"></i></div>
+      <div id="lvl"></div>
+    </div>
+    <div id="hotbar"></div>
+    <div id="buildinfo"></div>
+    <div id="hurt"></div>
+  </div>
+
+  <div id="craft" class="panel hidden">
+    <div class="box wide">
+      <h2>Fabricación e inventario</h2>
+      <div class="cols">
+        <div><h3>Inventario</h3><div id="inv"></div></div>
+        <div><h3>Recetas</h3><div id="recipes"></div></div>
+      </div>
+      <p class="dim">TAB para cerrar</p>
+    </div>
+  </div>
+
+  <div id="pause" class="panel hidden">
+    <div class="box">
+      <h2>Pausa</h2>
+      <button id="p-resume">Continuar</button>
+      <button id="p-save">Guardar partida</button>
+      <button id="p-menu">Salir al menú</button>
+    </div>
+  </div>
+
+  <div id="win" class="panel hidden">
+    <div class="box">
+      <h2>El faro arde</h2>
+      <p id="win-text"></p>
+      <button id="w-continue">Seguir jugando</button>
+    </div>
+  </div>
+
+  <div id="menu" class="panel">
+    <div class="box wide">
+      <h1>ÚLTIMO FUEGO</h1>
+      <p class="dim">Naufragaste en una isla sin nombre. Recolecta, fabrica, construye un refugio y enciende el faro para que te encuentren.</p>
+      <button id="m-continue" class="hidden">Continuar partida</button>
+      <button id="m-new">Nueva partida</button>
+      <div class="keys">
+        <span><b>WASD</b> moverse</span><span><b>Ratón</b> mirar</span>
+        <span><b>Shift</b> correr</span><span><b>Espacio</b> saltar</span>
+        <span><b>Clic</b> golpear / recolectar / colocar</span><span><b>1-6</b> herramienta</span>
+        <span><b>TAB</b> fabricar</span><span><b>E</b> beber / dormir</span>
+        <span><b>F</b> comer</span><span><b>V</b> venda</span>
+        <span><b>Rueda / R</b> cambiar pieza</span><span><b>X</b> demoler</span>
+        <span><b>Esc</b> pausa</span>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="game.js"></script>
+</body>
+</html>

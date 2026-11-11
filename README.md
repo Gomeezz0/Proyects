@@ -2,10 +2,13 @@
 
 Página de marca para vender páginas web 3D interactivas, con contacto directo por WhatsApp (605 86 26 60).
 
+Publicada en https://gomeezz0.github.io/Proyects/
+
 - `index.html` — contenido y secciones
 - `css/styles.css` — estilos
 - `js/main.js` — escena 3D (Three.js) e interacciones
 - `vendor/` — Three.js incluido en local (sin dependencias externas ni build)
+- `og.jpg` — imagen de vista previa al compartir el enlace
 
 ## Verla en local
 

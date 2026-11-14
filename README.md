@@ -21,3 +21,13 @@ npx http-server .
 Para publicarla basta con subir la carpeta a cualquier hosting estático (GitHub Pages, Netlify, Vercel…).
 
 El número de WhatsApp está en los enlaces `wa.me/34605862660` de `index.html` y en la constante `WHATSAPP` de `js/main.js`.
+
+## Gomeez — Curso de importaciones
+
+Página de venta independiente en la carpeta `cursos/` (se publica en `/Proyects/cursos/`).
+
+- `cursos/index.html` — contenido y secciones
+- `cursos/styles.css` — estilos
+- `cursos/main.js` — menú, animaciones y calculadora de márgenes
+
+El contacto va por WhatsApp: el enlace `wa.me/34605862660` está en la sección "Acceso" de `cursos/index.html`.

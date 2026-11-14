@@ -75,5 +75,12 @@
   $('calcForm').addEventListener('submit', (e) => e.preventDefault());
   calc();
 
+  /* Compra: pega aquí tu enlace de pago (Stripe, PayPal…) y el botón irá directo a él. */
+  const PAYMENT_URL = '';
+  if (PAYMENT_URL) {
+    $('buyBtn').href = PAYMENT_URL;
+    $('buyNote').textContent = 'Pago seguro en la pasarela. Al completarlo recibes tu acceso.';
+  }
+
   $('year').textContent = new Date().getFullYear();
 })();

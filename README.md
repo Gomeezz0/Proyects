@@ -22,12 +22,14 @@ Para publicarla basta con subir la carpeta a cualquier hosting estático (GitHub
 
 El número de WhatsApp está en los enlaces `wa.me/34605862660` de `index.html` y en la constante `WHATSAPP` de `js/main.js`.
 
-## Gomeez — Curso de importaciones
+## Gomeez — Programa de importaciones
 
 Página de venta independiente en la carpeta `cursos/` (se publica en `/Proyects/cursos/`).
 
 - `cursos/index.html` — contenido y secciones
-- `cursos/styles.css` — estilos
-- `cursos/main.js` — menú, animaciones y calculadora de márgenes
+- `cursos/styles.css` — estilos (mármol, oro, tipografía)
+- `cursos/main.js` — menú, animaciones, simulador de márgenes y botón de compra
+- `cursos/img/` — texturas de mármol y palmeras
 
-El contacto va por WhatsApp: el enlace `wa.me/34605862660` está en la sección "Acceso" de `cursos/index.html`.
+Precio del curso: 1.800 €. El botón «Comprar ahora» abre WhatsApp (`wa.me/34605862660`, en `cursos/index.html`).
+Para cobrar con una pasarela (Stripe, PayPal…), pega el enlace de pago en la constante `PAYMENT_URL` de `cursos/main.js`.

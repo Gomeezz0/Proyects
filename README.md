@@ -27,9 +27,8 @@ El número de WhatsApp está en los enlaces `wa.me/34605862660` de `index.html` 
 Página de venta independiente en la carpeta `cursos/` (se publica en `/Proyects/cursos/`).
 
 - `cursos/index.html` — contenido y secciones
-- `cursos/styles.css` — estilos (mármol, oro, tipografía)
-- `cursos/main.js` — menú, animaciones, simulador de márgenes y botón de compra
-- `cursos/img/` — texturas de mármol y palmeras
+- `cursos/styles.css` — estilos (fondo oscuro con acento verde neón)
+- `cursos/main.js` — animaciones, globo de rutas, carrusel, simulador, cuestionario y botón de compra
 
 Precio del curso: 1.800 €. El botón «Comprar ahora» abre WhatsApp (`wa.me/34605862660`, en `cursos/index.html`).
 Para cobrar con una pasarela (Stripe, PayPal…), pega el enlace de pago en la constante `PAYMENT_URL` de `cursos/main.js`.

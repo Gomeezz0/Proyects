@@ -3,337 +3,250 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Gomeez — Programa privado de importaciones</title>
-  <meta name="description" content="El programa de importaciones de Gomeez: producto, proveedores, logística, aduanas y venta. Acceso completo por 1.800 €.">
-  <meta name="theme-color" content="#0a0b0b">
-  <meta property="og:title" content="Gomeez — Programa privado de importaciones">
+  <title>Gomeez — Programa de importaciones</title>
+  <meta name="description" content="Aprende con Gomeez a importar productos y venderlos con margen: producto, proveedores, logística, aduanas y venta. Acceso completo por 1.800 €.">
+  <meta name="theme-color" content="#060807">
+  <meta property="og:title" content="Gomeez — Programa de importaciones">
   <meta property="og:description" content="El método de importaciones de Gomeez, de la fábrica a la venta. Acceso completo por 1.800 €.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_ES">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230a0b0b'/%3E%3Ccircle cx='32' cy='32' r='25' fill='none' stroke='%23c9a45c' stroke-width='2'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Georgia,serif' font-size='30' fill='%23c9a45c'%3EG%3C/text%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23060807'/%3E%3Cpath d='M44 25a14 14 0 1 0 2 11H33' fill='none' stroke='%2325e07f' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
-  <header class="nav" id="nav">
-    <a class="logo" href="#inicio" aria-label="Gomeez, inicio">
-      <span class="logo-mark" aria-hidden="true">G</span>
-      <span class="logo-word">Gomeez</span>
-    </a>
-    <nav class="nav-links" id="navLinks" aria-label="Principal">
-      <a href="#metodo">El método</a>
+  <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+
+  <header class="bar" id="bar">
+    <a class="logo" href="#inicio" aria-label="Gomeez, inicio"><span class="logo-mark" aria-hidden="true">G</span>Gomeez</a>
+    <nav class="bar-links" aria-label="Principal">
+      <a href="#metodo">Método</a>
       <a href="#programa">Programa</a>
       <a href="#simulador">Simulador</a>
-      <a href="#gomeez">Gomeez</a>
       <a href="#dudas">Dudas</a>
     </nav>
-    <a class="btn btn-gold btn-sm nav-cta" href="#comprar">Comprar</a>
-    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
+    <a class="btn btn-sm" href="#comprar">Comprar</a>
   </header>
 
   <main>
     <!-- PORTADA -->
-    <section class="hero marble-dark" id="inicio">
-      <span class="frond frond-tl" aria-hidden="true"></span>
-      <div class="wrap hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow reveal">Programa privado de importaciones</p>
-          <h1 class="reveal">El arte de <em class="gold">importar</em> y vender con margen.</h1>
-          <p class="lead reveal">Soy Gomeez. Con este modelo de negocio genero más de 10.000&nbsp;€ al mes*, y en este programa te enseño cada paso: qué traer, a quién comprárselo, cómo pasarlo por aduanas y dónde venderlo.</p>
-          <div class="cta-row reveal">
-            <a class="btn btn-gold" href="#comprar">Comprar el curso · 1.800&nbsp;€</a>
-            <a class="btn btn-line" href="#programa">Ver el programa</a>
-          </div>
-          <p class="fine reveal">*Resultado personal de Gomeez. No es una garantía de ingresos.</p>
+    <section class="hero" id="inicio">
+      <div class="wrap narrow center">
+        <p class="pill reveal"><span class="live"></span>Programa de importaciones · por Gomeez</p>
+        <h1 class="reveal">Aprende a <span class="hl">importar productos<svg viewBox="0 0 300 12" preserveAspectRatio="none" aria-hidden="true"><path d="M2 8 C 70 2, 150 11, 298 4"/></svg></span> y venderlos con margen</h1>
+        <p class="lead reveal">Soy Gomeez. Con este modelo de negocio genero más de 10.000&nbsp;€ al mes*, y en este programa te explico el camino completo: qué traer, a quién comprárselo, cómo pasarlo por aduanas y dónde venderlo.</p>
+
+        <div class="stage reveal" aria-hidden="true">
+          <canvas id="globe"></canvas>
+          <div class="stage-top"><span class="live"></span>Ruta de una importación</div>
+          <div class="chip chip-a"><small>Coste en fábrica</small><b>4,00 €</b></div>
+          <div class="chip chip-b"><small>Precio de venta</small><b>19,00 €</b></div>
+          <div class="chip chip-c"><small>Beneficio del pedido · ejemplo</small><b class="grad">4.225 €</b></div>
+          <div class="stage-route"><span>Fábrica</span><i></i><span>Aduana</span><i></i><span>Tu cliente</span></div>
         </div>
 
-        <div class="arch-wrap reveal" aria-hidden="true">
-          <div class="arch">
-            <div class="arch-sky"></div>
-            <div class="arch-sun"></div>
-            <div class="arch-sea"></div>
-            <span class="palm palm-a"></span>
-            <span class="palm palm-b"></span>
-            <span class="palm palm-c"></span>
-          </div>
-          <p class="arch-cap"><span>Miami</span><span>25.76° N</span><span>80.19° W</span></p>
-        </div>
+        <a class="btn btn-xl reveal" href="#comprar">Quiero el programa · 1.800&nbsp;€ <span aria-hidden="true">↓</span></a>
+        <p class="fine reveal">*Resultado personal de Gomeez. No es una garantía de ingresos.</p>
       </div>
     </section>
 
     <!-- CIFRAS -->
-    <section class="figures marble-light" aria-label="Datos del programa">
-      <div class="wrap figures-grid">
-        <div class="figure reveal"><b>+10.000&nbsp;€</b><span>al mes genera Gomeez con este modelo*</span></div>
-        <div class="figure reveal"><b>VII</b><span>módulos, de la primera idea al segundo pedido</span></div>
-        <div class="figure reveal"><b>1.800&nbsp;€</b><span>pago único por el acceso completo</span></div>
+    <section class="stats" aria-label="Datos del programa">
+      <div class="wrap stats-grid">
+        <div class="stat reveal"><b><span data-count="10000" data-prefix="+" data-suffix=" €">+10.000 €</span></b><span>al mes genera Gomeez con este modelo*</span></div>
+        <div class="stat reveal"><b><span data-count="7">7</span></b><span>módulos, de la primera idea al segundo pedido</span></div>
+        <div class="stat reveal"><b><span data-count="1800" data-suffix=" €">1.800 €</span></b><span>pago único por el acceso completo</span></div>
+      </div>
+    </section>
+
+    <!-- HISTORIA -->
+    <section class="section" id="gomeez">
+      <div class="wrap story-grid">
+        <div class="story-copy reveal">
+          <h2>No enseño teoría. <span class="grad">Vivo de importar.</span></h2>
+          <p><b class="grad">Lo que vas a ver</b> es el mismo proceso que sigo en cada operación: cómo elijo el producto, cómo hablo con la fábrica, qué números miro antes de pagar y dónde lo vendo después.</p>
+          <p>Con este modelo genero <b>más de 10.000&nbsp;€ al mes</b>. Creé el programa para ahorrarte los errores que a mí me costaron tiempo y dinero al empezar.</p>
+          <p>Te cuento también lo que sale mal y por qué. Y si tienes dudas, <b>hablas conmigo</b>, no con un comercial.</p>
+          <a class="btn" href="#comprar">Quiero el programa <span aria-hidden="true">↓</span></a>
+        </div>
+
+        <div class="op-card glow-card reveal" aria-hidden="true">
+          <div class="op-head"><span class="live"></span>Operación en curso<em>N.º 0001</em></div>
+          <ul class="op-track">
+            <li class="done"><b>Producto elegido</b><span>Demanda y margen validados</span></li>
+            <li class="done"><b>Proveedor cerrado</b><span>Muestra aprobada, precio pactado</span></li>
+            <li class="now"><b>En tránsito</b><span>Transporte y aduana</span></li>
+            <li><b>A la venta</b><span>Publicado y vendiendo</span></li>
+          </ul>
+          <div class="op-bars"><i style="--h:32%"></i><i style="--h:48%"></i><i style="--h:41%"></i><i style="--h:63%"></i><i style="--h:57%"></i><i style="--h:78%"></i><i style="--h:92%"></i></div>
+          <p class="op-foot">Ilustración del proceso que aprendes en el programa</p>
+        </div>
       </div>
     </section>
 
     <!-- MÉTODO -->
-    <section class="section marble-light" id="metodo">
+    <section class="section" id="metodo">
       <div class="wrap">
         <header class="sec-head center reveal">
-          <p class="eyebrow">El método</p>
-          <h2>Cuatro movimientos, <em>siempre los mismos</em></h2>
-          <p class="sec-lead">Importar no es comprar barato y cruzar los dedos. Es un proceso que se repite igual en cada operación, y eso es lo que vas a dominar.</p>
+          <h2>Cuatro pasos, <span class="grad">siempre los mismos</span></h2>
+          <p>Importar no es comprar barato y cruzar los dedos. Es un proceso que se repite igual en cada operación.</p>
         </header>
-
         <ol class="steps">
-          <li class="step reveal">
-            <span class="step-n">I</span>
-            <div><h3>El producto</h3><p>Detectar artículos con demanda real y margen suficiente antes de gastar un euro.</p></div>
-          </li>
-          <li class="step reveal">
-            <span class="step-n">II</span>
-            <div><h3>El proveedor</h3><p>Filtrar fábricas, pedir muestras y cerrar precio y condiciones con seguridad.</p></div>
-          </li>
-          <li class="step reveal">
-            <span class="step-n">III</span>
-            <div><h3>La logística</h3><p>Transporte, incoterms, aranceles e IVA: el coste real de cada unidad en tu puerta.</p></div>
-          </li>
-          <li class="step reveal">
-            <span class="step-n">IV</span>
-            <div><h3>La venta</h3><p>Dónde vender, a qué precio, y cómo convertir una operación en la siguiente.</p></div>
-          </li>
+          <li class="step glow-card reveal"><span class="step-n">01</span><h3>Producto</h3><p>Detecta artículos con demanda real y margen suficiente antes de gastar un euro.</p></li>
+          <li class="step glow-card reveal"><span class="step-n">02</span><h3>Proveedor</h3><p>Filtra fábricas, pide muestras y cierra precio y condiciones con seguridad.</p></li>
+          <li class="step glow-card reveal"><span class="step-n">03</span><h3>Logística</h3><p>Transporte, incoterms, aranceles e IVA: el coste real de cada unidad en tu puerta.</p></li>
+          <li class="step glow-card reveal"><span class="step-n">04</span><h3>Venta</h3><p>Dónde vender, a qué precio, y cómo convertir una operación en la siguiente.</p></li>
         </ol>
       </div>
     </section>
 
     <!-- PROGRAMA -->
-    <section class="section onyx" id="programa">
-      <div class="wrap program-grid">
-        <header class="sec-head sticky reveal">
-          <p class="eyebrow">El programa</p>
-          <h2>Siete módulos, <em class="gold">un solo recorrido</em></h2>
-          <p class="sec-lead">En el orden exacto en el que ocurre una importación real.</p>
-          <a class="btn btn-line" href="#comprar">Acceder por 1.800&nbsp;€</a>
+    <section class="section" id="programa">
+      <div class="wrap">
+        <header class="sec-head center reveal">
+          <h2>Lo que hay dentro <span class="grad">del programa</span></h2>
+          <p>Siete módulos en el orden en el que ocurre una importación real.</p>
         </header>
-
-        <div class="modules">
-          <details class="module reveal" open>
-            <summary><span class="m-num">I</span><span class="m-title">Las bases del negocio</span><span class="m-ico" aria-hidden="true"></span></summary>
-            <ul>
-              <li>Cómo funciona el modelo y de dónde sale el margen</li>
-              <li>Cuánto capital necesitas para empezar y cómo repartirlo</li>
-              <li>Alta de actividad, número EORI y lo básico para operar en regla</li>
-            </ul>
-          </details>
-          <details class="module reveal">
-            <summary><span class="m-num">II</span><span class="m-title">Encontrar el producto</span><span class="m-ico" aria-hidden="true"></span></summary>
-            <ul>
-              <li>Criterios para elegir: demanda, competencia, peso y margen</li>
-              <li>Productos que conviene evitar al principio</li>
-              <li>Validar la idea antes de hacer el primer pedido</li>
-            </ul>
-          </details>
-          <details class="module reveal">
-            <summary><span class="m-num">III</span><span class="m-title">Proveedores y negociación</span><span class="m-ico" aria-hidden="true"></span></summary>
-            <ul>
-              <li>Dónde buscar fábricas y cómo distinguirlas de intermediarios</li>
-              <li>Muestras, cantidades mínimas y precio por volumen</li>
-              <li>Formas de pago seguras y señales de estafa</li>
-            </ul>
-          </details>
-          <details class="module reveal">
-            <summary><span class="m-num">IV</span><span class="m-title">Logística y transporte</span><span class="m-ico" aria-hidden="true"></span></summary>
-            <ul>
-              <li>Marítimo, aéreo o exprés: cuándo compensa cada uno</li>
-              <li>Incoterms explicados sin jerga</li>
-              <li>Trabajar con un transitario y controlar la calidad en origen</li>
-            </ul>
-          </details>
-          <details class="module reveal">
-            <summary><span class="m-num">V</span><span class="m-title">Aduanas e impuestos</span><span class="m-ico" aria-hidden="true"></span></summary>
-            <ul>
-              <li>Aranceles, IVA de importación y cómo calcularlos antes de comprar</li>
-              <li>Documentación y certificados que te pueden pedir</li>
-              <li>Errores que retienen la mercancía y cómo evitarlos</li>
-            </ul>
-          </details>
-          <details class="module reveal">
-            <summary><span class="m-num">VI</span><span class="m-title">Vender con margen</span><span class="m-ico" aria-hidden="true"></span></summary>
-            <ul>
-              <li>Canales de venta: marketplaces, tienda propia y venta al por mayor</li>
-              <li>Fijar el precio y presentar el producto</li>
-              <li>Primeras ventas y atención al cliente</li>
-            </ul>
-          </details>
-          <details class="module reveal">
-            <summary><span class="m-num">VII</span><span class="m-title">Repetir y escalar</span><span class="m-ico" aria-hidden="true"></span></summary>
-            <ul>
-              <li>Leer los números de una operación y decidir la siguiente</li>
-              <li>Reinvertir, ampliar catálogo y mejorar condiciones con el proveedor</li>
-              <li>Organizarte para que el negocio no dependa de tu tiempo</li>
-            </ul>
-          </details>
-        </div>
       </div>
+      <div class="carousel reveal">
+        <button class="car-btn car-prev" id="carPrev" aria-label="Módulo anterior">‹</button>
+        <div class="car-track" id="carTrack" tabindex="0" aria-label="Módulos del programa">
+          <article class="mod"><span class="mod-n">Módulo 1</span><h3>Las bases del negocio</h3><ul><li>Cómo funciona el modelo y de dónde sale el margen</li><li>Cuánto capital necesitas y cómo repartirlo</li><li>Alta de actividad, EORI y lo básico para operar en regla</li></ul></article>
+          <article class="mod"><span class="mod-n">Módulo 2</span><h3>Encontrar el producto</h3><ul><li>Criterios: demanda, competencia, peso y margen</li><li>Productos que conviene evitar al principio</li><li>Validar la idea antes del primer pedido</li></ul></article>
+          <article class="mod"><span class="mod-n">Módulo 3</span><h3>Proveedores y negociación</h3><ul><li>Dónde buscar fábricas y distinguirlas de intermediarios</li><li>Muestras, mínimos y precio por volumen</li><li>Pagos seguros y señales de estafa</li></ul></article>
+          <article class="mod"><span class="mod-n">Módulo 4</span><h3>Logística y transporte</h3><ul><li>Marítimo, aéreo o exprés: cuándo compensa cada uno</li><li>Incoterms explicados sin jerga</li><li>Transitario y control de calidad en origen</li></ul></article>
+          <article class="mod"><span class="mod-n">Módulo 5</span><h3>Aduanas e impuestos</h3><ul><li>Aranceles e IVA de importación, calculados antes de comprar</li><li>Documentación y certificados</li><li>Errores que retienen la mercancía</li></ul></article>
+          <article class="mod"><span class="mod-n">Módulo 6</span><h3>Vender con margen</h3><ul><li>Marketplaces, tienda propia y venta al por mayor</li><li>Fijar el precio y presentar el producto</li><li>Primeras ventas y atención al cliente</li></ul></article>
+          <article class="mod"><span class="mod-n">Módulo 7</span><h3>Repetir y escalar</h3><ul><li>Leer los números y decidir la siguiente operación</li><li>Reinvertir y ampliar catálogo</li><li>Que el negocio no dependa de tu tiempo</li></ul></article>
+        </div>
+        <button class="car-btn car-next" id="carNext" aria-label="Módulo siguiente">›</button>
+      </div>
+      <div class="car-dots" id="carDots" aria-hidden="true"></div>
     </section>
 
     <!-- SIMULADOR -->
-    <section class="section marble-light" id="simulador">
-      <div class="wrap sim-grid">
-        <div class="sim-intro reveal">
-          <p class="eyebrow">Simulador</p>
-          <h2>Los números de <em>una operación</em></h2>
-          <p class="sec-lead">Todo el negocio cabe en esta cuenta. Ajusta los valores y observa el margen. En el programa aprendes a mejorar cada línea.</p>
-
+    <section class="section" id="simulador">
+      <div class="wrap">
+        <header class="sec-head center reveal">
+          <h2>Haz los números de <span class="grad">una importación</span></h2>
+          <p>Todo el negocio cabe en esta cuenta. Mueve los valores y mira cómo cambia el margen.</p>
+        </header>
+        <div class="sim frame reveal">
           <form class="sim-form" id="calcForm" novalidate>
-            <label>
-              <span>Coste por unidad en fábrica</span>
-              <output id="oCost">4,00 €</output>
-              <input type="range" id="iCost" min="0.5" max="50" step="0.5" value="4">
-            </label>
-            <label>
-              <span>Unidades del pedido</span>
-              <output id="oUnits">500</output>
-              <input type="range" id="iUnits" min="50" max="3000" step="50" value="500">
-            </label>
-            <label>
-              <span>Transporte, aranceles e IVA</span>
-              <output id="oShip">900 €</output>
-              <input type="range" id="iShip" min="0" max="6000" step="50" value="900">
-            </label>
-            <label>
-              <span>Precio de venta por unidad</span>
-              <output id="oPrice">19,00 €</output>
-              <input type="range" id="iPrice" min="1" max="150" step="0.5" value="19">
-            </label>
-            <label>
-              <span>Comisiones y publicidad</span>
-              <output id="oFees">25 %</output>
-              <input type="range" id="iFees" min="0" max="60" step="1" value="25">
-            </label>
+            <label><span>Coste por unidad en fábrica</span><output id="oCost">4,00 €</output><input type="range" id="iCost" min="0.5" max="50" step="0.5" value="4"></label>
+            <label><span>Unidades del pedido</span><output id="oUnits">500</output><input type="range" id="iUnits" min="50" max="3000" step="50" value="500"></label>
+            <label><span>Transporte, aranceles e IVA</span><output id="oShip">900 €</output><input type="range" id="iShip" min="0" max="6000" step="50" value="900"></label>
+            <label><span>Precio de venta por unidad</span><output id="oPrice">19,00 €</output><input type="range" id="iPrice" min="1" max="150" step="0.5" value="19"></label>
+            <label><span>Comisiones y publicidad</span><output id="oFees">25 %</output><input type="range" id="iFees" min="0" max="60" step="1" value="25"></label>
           </form>
-        </div>
-
-        <div class="ledger marble-dark reveal" aria-live="polite">
-          <p class="ledger-head">Hoja de operación</p>
-          <dl>
-            <div><dt>Mercancía</dt><dd id="rGoods">2.000 €</dd></div>
-            <div><dt>Transporte e impuestos</dt><dd id="rShip">900 €</dd></div>
-            <div><dt>Inversión total</dt><dd id="rInvest">2.900 €</dd></div>
-            <div><dt>Coste real por unidad</dt><dd id="rLanded">5,80 €</dd></div>
-            <div><dt>Ingresos por ventas</dt><dd id="rRevenue">9.500 €</dd></div>
-            <div><dt>Comisiones y publicidad</dt><dd id="rFees">−2.375 €</dd></div>
-          </dl>
-          <div class="ledger-total">
-            <span>Beneficio de la operación</span>
-            <strong id="rProfit">4.225 €</strong>
+          <div class="sim-out" aria-live="polite">
+            <dl>
+              <div><dt>Mercancía</dt><dd id="rGoods">2.000 €</dd></div>
+              <div><dt>Transporte e impuestos</dt><dd id="rShip">900 €</dd></div>
+              <div><dt>Inversión total</dt><dd id="rInvest">2.900 €</dd></div>
+              <div><dt>Coste real por unidad</dt><dd id="rLanded">5,80 €</dd></div>
+              <div><dt>Ingresos por ventas</dt><dd id="rRevenue">9.500 €</dd></div>
+              <div><dt>Comisiones y publicidad</dt><dd id="rFees">−2.375 €</dd></div>
+            </dl>
+            <div class="sim-total"><span>Beneficio de la operación</span><strong id="rProfit">4.225 €</strong></div>
+            <div class="sim-roi"><span>Retorno sobre inversión</span><b id="rRoi">146 %</b><i class="roi-bar"><i id="roiFill"></i></i></div>
+            <p class="sim-note">Ejemplo ilustrativo con los valores que tú introduces. No es una previsión ni una promesa de resultados.</p>
           </div>
-          <div class="ledger-foot"><span>Retorno sobre inversión</span><b id="rRoi">146 %</b></div>
-          <p class="ledger-note">Ejemplo ilustrativo con los valores que tú introduces. No es una previsión ni una promesa de resultados.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- GOMEEZ -->
-    <section class="section onyx about" id="gomeez">
-      <span class="frond frond-br" aria-hidden="true"></span>
-      <div class="wrap about-grid">
-        <div class="monogram reveal" aria-hidden="true"><span>G</span></div>
-        <div class="about-copy reveal">
-          <p class="eyebrow">Quién está detrás</p>
-          <h2>Soy Gomeez, <em class="gold">y vivo de importar</em></h2>
-          <p>No enseño teoría sacada de un libro. Enseño el mismo proceso que sigo en cada operación: cómo elijo el producto, cómo hablo con la fábrica, qué números miro antes de pagar y dónde lo vendo después.</p>
-          <p>Con este modelo genero más de 10.000&nbsp;€ al mes. Creé el programa para ahorrarte los errores que a mí me costaron tiempo y dinero al empezar.</p>
-          <ul class="facts">
-            <li><b>Práctico</b><span>Cada lección termina en una acción concreta</span></li>
-            <li><b>Sin humo</b><span>También lo que sale mal, y por qué</span></li>
-            <li><b>Directo</b><span>Hablas conmigo, no con un comercial</span></li>
-          </ul>
         </div>
       </div>
     </section>
 
     <!-- COMPRAR -->
-    <section class="section marble-light buy" id="comprar">
+    <section class="section buy" id="comprar">
       <div class="wrap">
         <header class="sec-head center reveal">
-          <p class="eyebrow">Acceso</p>
-          <h2>Compra <em>el programa</em></h2>
-          <p class="sec-lead">Un único nivel de acceso, con todo incluido.</p>
+          <h2>Compra el programa <span class="grad">y empieza hoy</span></h2>
+          <p>Un único acceso, con todo incluido.</p>
         </header>
 
-        <div class="buy-card marble-dark reveal">
-          <span class="frond frond-card" aria-hidden="true"></span>
+        <div class="buy-card frame reveal">
           <div class="buy-main">
-            <p class="eyebrow">Acceso completo</p>
-            <h3>Programa de importaciones Gomeez</h3>
+            <p class="tagline">Acceso completo</p>
+            <p class="price"><span class="grad" data-count="1800">1.800</span><sup>€</sup></p>
+            <p class="price-sub">Pago único</p>
             <ul class="buy-list">
               <li>Los siete módulos del programa</li>
               <li>Plantillas de mensajes para proveedores</li>
               <li>Hoja de cálculo de costes y márgenes</li>
               <li>Lecciones en vídeo, a tu ritmo</li>
-              <li>Contacto directo con Gomeez durante el curso</li>
+              <li>Contacto directo con Gomeez</li>
             </ul>
           </div>
-          <div class="buy-side">
-            <p class="price-label">Pago único</p>
-            <p class="price"><span class="gold">1.800</span><sup>€</sup></p>
-            <a class="btn btn-gold btn-block" id="buyBtn" target="_blank" rel="noopener"
-               href="https://wa.me/34605862660?text=Hola%20Gomeez%2C%20quiero%20comprar%20el%20programa%20de%20importaciones%20(1.800%20%E2%82%AC).">Comprar ahora</a>
+
+          <div class="quiz" id="quiz">
+            <div class="quiz-prog"><span class="dashes" id="qDashes"><i></i><i></i><i></i></span><em id="qCount">Paso 1 / 3</em></div>
+
+            <div class="q-step" data-q="Experiencia importando">
+              <h3>¿Has importado alguna vez?</h3>
+              <p>Opcional: así Gomeez sabe desde dónde partes.</p>
+              <button type="button"><kbd>A</kbd>Nunca, empiezo de cero</button>
+              <button type="button"><kbd>B</kbd>He hecho algún pedido pequeño</button>
+              <button type="button"><kbd>C</kbd>Ya importo y quiero mejorar</button>
+            </div>
+            <div class="q-step" data-q="Tiempo por semana" hidden>
+              <h3>¿Cuánto tiempo puedes dedicarle?</h3>
+              <p>Cada semana, de forma constante.</p>
+              <button type="button"><kbd>A</kbd>Menos de 5 horas</button>
+              <button type="button"><kbd>B</kbd>Entre 5 y 15 horas</button>
+              <button type="button"><kbd>C</kbd>Más de 15 horas</button>
+            </div>
+            <div class="q-step" data-q="Capital para el primer pedido" hidden>
+              <h3>¿Con qué capital cuentas para tu primer pedido?</h3>
+              <p>Aparte del precio del programa.</p>
+              <button type="button"><kbd>A</kbd>Menos de 1.000 €</button>
+              <button type="button"><kbd>B</kbd>Entre 1.000 y 5.000 €</button>
+              <button type="button"><kbd>C</kbd>Más de 5.000 €</button>
+            </div>
+            <div class="q-done" id="qDone" hidden>
+              <h3>Listo.</h3>
+              <p>Tus respuestas se enviarán junto a tu pedido.</p>
+              <button type="button" class="q-reset" id="qReset">Cambiar respuestas</button>
+            </div>
+
+            <a class="btn btn-xl btn-block" id="buyBtn" target="_blank" rel="noopener"
+               href="https://wa.me/34605862660?text=Hola%20Gomeez%2C%20quiero%20comprar%20el%20programa%20de%20importaciones%20(1.800%20%E2%82%AC).">Comprar ahora · 1.800&nbsp;€</a>
             <p class="buy-note" id="buyNote">Se abre WhatsApp con tu pedido. Gomeez te envía los datos de pago y, una vez confirmado, tu acceso.</p>
             <p class="buy-phone">WhatsApp · +34 605 86 26 60</p>
           </div>
         </div>
-
-        <ol class="buy-steps">
-          <li class="reveal"><span>I</span><p><b>Pulsa «Comprar ahora»</b>Tu pedido llega directamente a Gomeez.</p></li>
-          <li class="reveal"><span>II</span><p><b>Realiza el pago</b>Recibes los datos para abonar los 1.800&nbsp;€.</p></li>
-          <li class="reveal"><span>III</span><p><b>Recibe tu acceso</b>Con el pago confirmado, empiezas por el módulo I.</p></li>
-        </ol>
       </div>
     </section>
 
     <!-- DUDAS -->
-    <section class="section onyx" id="dudas">
-      <div class="wrap faq-wrap">
+    <section class="section" id="dudas">
+      <div class="wrap narrow">
         <header class="sec-head center reveal">
-          <p class="eyebrow">Dudas</p>
-          <h2>Antes de <em class="gold">entrar</em></h2>
+          <h2>Dudas <span class="grad">antes de entrar</span></h2>
         </header>
         <div class="faqs">
-          <details class="faq reveal">
-            <summary>¿Necesito experiencia previa?<span class="m-ico" aria-hidden="true"></span></summary>
-            <p>No. El programa empieza desde cero y sigue el orden de una importación real, así que cada módulo se apoya en el anterior.</p>
-          </details>
-          <details class="faq reveal">
-            <summary>¿Cómo se paga el curso?<span class="m-ico" aria-hidden="true"></span></summary>
-            <p>El precio es de 1.800&nbsp;€ en un pago único. Al pulsar «Comprar ahora» se abre WhatsApp con tu pedido; ahí recibes los datos de pago y, cuando se confirma, tu acceso.</p>
-          </details>
-          <details class="faq reveal">
-            <summary>Además del curso, ¿cuánto capital necesito?<span class="m-ico" aria-hidden="true"></span></summary>
-            <p>Depende del producto que elijas. En el primer módulo vemos cómo calcular tu presupuesto y cómo hacer un primer pedido pequeño para aprender sin arriesgar de más.</p>
-          </details>
-          <details class="faq reveal">
-            <summary>¿Me garantizas que voy a ganar dinero?<span class="m-ico" aria-hidden="true"></span></summary>
-            <p>No, y desconfía de quien lo haga. Enseño el método que yo uso; el resultado depende de tu producto, tu capital y del trabajo que le pongas.</p>
-          </details>
-          <details class="faq reveal">
-            <summary>¿Es legal importar siendo particular?<span class="m-ico" aria-hidden="true"></span></summary>
-            <p>Para vender de forma habitual necesitas estar dado de alta. En el programa vemos qué trámites hacen falta y en qué orden, para operar en regla desde el principio.</p>
-          </details>
-          <details class="faq reveal">
-            <summary>¿Cuánto tiempo tengo que dedicarle?<span class="m-ico" aria-hidden="true"></span></summary>
-            <p>Puedes compaginarlo con tu trabajo o tus estudios. Lo importante es la constancia: unas pocas horas cada semana valen más que un fin de semana de atracón.</p>
-          </details>
+          <details class="faq reveal"><summary>¿Necesito experiencia previa?<i aria-hidden="true"></i></summary><p>No. El programa empieza desde cero y sigue el orden de una importación real, así que cada módulo se apoya en el anterior.</p></details>
+          <details class="faq reveal"><summary>¿Cómo se paga el programa?<i aria-hidden="true"></i></summary><p>El precio es de 1.800&nbsp;€ en un pago único. Al pulsar «Comprar ahora» se abre WhatsApp con tu pedido; ahí recibes los datos de pago y, cuando se confirma, tu acceso.</p></details>
+          <details class="faq reveal"><summary>Además del programa, ¿cuánto capital necesito?<i aria-hidden="true"></i></summary><p>Depende del producto que elijas. En el primer módulo vemos cómo calcular tu presupuesto y cómo hacer un primer pedido pequeño para aprender sin arriesgar de más.</p></details>
+          <details class="faq reveal"><summary>¿Me garantizas que voy a ganar dinero?<i aria-hidden="true"></i></summary><p>No, y desconfía de quien lo haga. Enseño el método que yo uso; el resultado depende de tu producto, tu capital y del trabajo que le pongas.</p></details>
+          <details class="faq reveal"><summary>¿Es legal importar siendo particular?<i aria-hidden="true"></i></summary><p>Para vender de forma habitual necesitas estar dado de alta. En el programa vemos qué trámites hacen falta y en qué orden, para operar en regla desde el principio.</p></details>
+          <details class="faq reveal"><summary>¿Cuánto tiempo tengo que dedicarle?<i aria-hidden="true"></i></summary><p>Puedes compaginarlo con tu trabajo o tus estudios. Lo importante es la constancia: unas pocas horas cada semana valen más que un fin de semana de atracón.</p></details>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer marble-dark">
-    <div class="wrap">
-      <a class="logo logo-lg" href="#inicio"><span class="logo-mark" aria-hidden="true">G</span><span class="logo-word">Gomeez</span></a>
-      <p class="legal">Aviso: las cifras de ingresos mencionadas en esta página corresponden a la experiencia personal de Gomeez y no constituyen una garantía ni una previsión de resultados. Importar y vender productos implica riesgo, incluida la pérdida del capital invertido. Los resultados de cada persona dependen de su capital, su dedicación y las condiciones del mercado.</p>
-      <p class="copy">© <span id="year">2026</span> Gomeez · Todos los derechos reservados</p>
+  <footer class="footer">
+    <div class="wrap narrow center">
+      <a class="logo" href="#inicio"><span class="logo-mark" aria-hidden="true">G</span>Gomeez</a>
+      <p class="legal">Las cifras de ingresos mencionadas en esta página corresponden a la experiencia personal de Gomeez y no constituyen una garantía ni una previsión de resultados. Importar y vender productos implica riesgo, incluida la pérdida del capital invertido. Los resultados de cada persona dependen de su capital, su dedicación y las condiciones del mercado.</p>
+      <p class="copy">© <span id="year">2026</span> Gomeez. Todos los derechos reservados.</p>
     </div>
   </footer>
+
+  <a class="dock" id="dock" href="#comprar"><span>Programa de importaciones · <b>1.800&nbsp;€</b></span><em>Comprar</em></a>
 
   <script src="main.js"></script>
 </body>
